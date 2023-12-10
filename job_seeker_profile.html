@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeker Profile</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Seeker Profile</h1>
+    </header>
+    <main>
+        <h2>{{ job_seeker_profile.name }}</h2>
+        <p><strong>Skills:</strong> {{ job_seeker_profile.skills }}</p>
+        <p><strong>Education:</strong> {{ job_seeker_profile.education }}</p>
+        <p><strong>Location:</strong> {{ job_seeker_profile.location }}</p>
+        <img src="{{ job_seeker_profile.profile_picture }}" alt="Profile Picture">
+    </main>
+</body>
+</html>

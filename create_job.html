@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Page Title</h1>
+    </header>
+    <main>
+        <!-- Your existing content goes here -->
+    </main>
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+    <header>
+        <h1>Create Job Listing</h1>
+    </header>
+    <main>
+        <form action="/create_job" method="post">
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title" required>
+
+            <label for="job_description">Job Description:</label>
+            <textarea id="job_description" name="job_description" required></textarea>
+
+            <label for="job_requirements">Job Requirements:</label>
+            <textarea id="job_requirements" name="job_requirements" required></textarea>
+
+            <button type="submit">Create Job</button>
+        </form>
+    </main>
+</body>
+</html>

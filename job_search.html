@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Customized Experience: Tailor Your Job Search</h1>
+    </header>
+    <main>
+        <form action="/search" method="get">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+
+            <label for="industry">Industry:</label>
+            <input type="text" id="industry" name="industry">
+
+            <label for="job_type">Job Type:</label>
+            <select id="job_type" name="job_type">
+                <option value="full_time">Full Time</option>
+                <option value="part_time">Part Time</option>
+                <option value="contract">Contract</option>
+                <!-- Add more job types as needed -->
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </main>
+</body>
+
+</html>

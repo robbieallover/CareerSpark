@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diverse Job Listings</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Diverse Job Listings</h1>
+    </header>
+    <main>
+        {% for job_listing in job_listings %}
+            <article class="job-listing">
+                <h2>{{ job_listing.title }}</h2>
+                <p class="description">{{ job_listing.description }}</p>
+                <p><strong>Requirements:</strong> {{ job_listing.requirements }}</p>
+                <p><strong>Industry:</strong> {{ job_listing.industry }}</p>
+                <p><strong>Location:</strong> {{ job_listing.location }}</p>
+                <button class="apply-button">Apply Now</button>
+            </article>
+        {% endfor %}
+    </main>
+
+    <!-- Your existing HTML content here -->
+
+    <header>
+        <h1>Passion Ignited: Discover Roles That Spark Your Ambitions</h1>
+    </header>
+    <main>
+        {% for job_listing in job_listings %}
+            <article class="job-listing">
+                <h2>{{ job_listing.title }}</h2>
+                <p class="description">{{ job_listing.description }}</p>
+                <p><strong>Requirements:</strong> {{ job_listing.requirements }}</p>
+                <p><strong>Industry:</strong> {{ job_listing.industry }}</p>
+                <p><strong>Location:</strong> {{ job_listing.location }}</p>
+                <button class="apply-button">Apply Now</button>
+            </article>
+        {% endfor %}
+    </main>
+</body>
+</html>

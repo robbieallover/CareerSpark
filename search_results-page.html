@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="f-e_static-style.css">
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+    </header>
+    <main>
+        <p>Search results for: {{ query }}</p>
+
+        <!-- Display filtered job listings -->
+        {% for job in jobs %}
+            <div class="job-listing">
+                <h3>{{ job.title }}</h3>
+                <p>{{ job.description }}</p>
+                <!-- Add more job details as needed -->
+            </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

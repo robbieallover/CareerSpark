@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Options</h1>
+    </header>
+    <main>
+        <h2>Select Payment Method</h2>
+        <form action="/charge" method="post">
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="card">Credit/Debit Card</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </main>
+</body>
+</html>

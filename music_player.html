@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Music Player</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Country Music Player</h1>
+    </header>
+    <main>
+        <audio id="musicPlayer" controls>
+            <!-- Placeholder for the audio source -->
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Define the playlist
+            const playlist = [
+                'path/to/newest_song.mp3',
+                'path/to/random_song1.mp3',
+                'path/to/random_song2.mp3',
+                // Add more random songs as needed
+            ];
+
+            // Initialize the audio player
+            const musicPlayer = document.getElementById('musicPlayer');
+            let currentTrackIndex = 0;
+
+            // Function to update the audio source
+            function updateAudioSource() {
+                const currentTrack = playlist[currentTrackIndex];
+                musicPlayer.src = currentTrack;
+            }
+
+            // Initial setup
+            updateAudioSource();
+
+            // Event listener for when the audio ends
+            musicPlayer.addEventListener('ended', function () {
+                // Move to the next track
+                currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+                updateAudioSource();
+
+                // Play the next track
+                musicPlayer.play();
+            });
+        });
+    </script>
+</body>
+</html>

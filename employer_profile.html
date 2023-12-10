@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Profile</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Employer Profile</h1>
+    </header>
+    <main>
+        <h2>{{ employer_profile.company_name }}</h2>
+        <p><strong>Location:</strong> {{ employer_profile.location }}</p>
+        <p><strong>Phone Number:</strong> {{ employer_profile.phone_number }}</p>
+        <p><strong>Email:</strong> {{ employer_profile.email }}</p>
+        <p><strong>Description:</strong> {{ employer_profile.description }}</p>
+    </main>
+</body>
+</html>
