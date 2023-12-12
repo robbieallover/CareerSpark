@@ -2,5 +2,10 @@
     {
         "name": "Function_0",
         "private": false
+    },
+    {
+        "name": "signup",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
